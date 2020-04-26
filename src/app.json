@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/main",
+    "pages/user/main",
+    "pages/follow/main",
+    "pages/fans/main",
+    "pages/personal/main",
+    "pages/grant/main",
+    "pages/release/main",
+    "pages/detail/main",
+    "pages/search/main",
+    "pages/logs/main"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff2f2f",
+    "navigationBarTitleText": "live",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "backgroundColor": "#fafafa",
+    "selectedColor": "#333",
+    "borderStyle": "white",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/main",
+        "iconPath": "static/tabs/home.png",
+        "selectedIconPath": "static/tabs/home-active.png"
+      },
+      {
+        "text": "发布",
+        "pagePath": "pages/release/main",
+        "iconPath": "static/tabs/release.png",
+        "selectedIconPath": "static/tabs/release-active.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/main",
+        "iconPath": "static/tabs/user.png",
+        "selectedIconPath": "static/tabs/user-active.png"
+      }
+    ],
+    "items": [
+      {
+        "name": "首页",
+        "pagePath": "pages/index/main",
+        "icon": "static/tabs/home.png",
+        "activeIcon": "static/tabs/home-active.png"
+      },
+      {
+        "name": "发布",
+        "pagePath": "pages/release/main",
+        "icon": "static/tabs/release.png",
+        "activeIcon": "static/tabs/release-active.png"
+      },
+      {
+        "name": "我的",
+        "pagePath": "pages/user/main",
+        "icon": "static/tabs/user.png",
+        "activeIcon": "static/tabs/user-active.png"
+      }
+    ],
+    "position": "bottom"
+  }
+}

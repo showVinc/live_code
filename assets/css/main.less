@@ -1,0 +1,235 @@
+@color: rgba(255, 47, 47, 1);
+@colorA: rgba(255, 47, 47, .5);
+@commonColor: rgba(0, 160, 232, 1);
+@commonColorA: rgba(0, 160, 232, .5);
+@payColor: #ff2f2f;
+@coinColor: #f5af18;
+
+.public-loading-more{
+  font-size: 12px!important;
+  color: #999!important;
+  background: none!important;
+  width: 100%!important;
+  margin: 10px 0!important;
+  display: flex!important;
+  align-items: center!important;
+  justify-content: center!important;
+  border: none!important;
+  img{
+    height: 12px!important;
+    margin-right: 10px!important;
+  }
+}
+
+.public-list {
+  min-height: 100vh;
+  background: #f5f5f6;
+  &.pd-b{
+    padding-bottom: 100px;
+  }
+  &.auto{
+    min-height: auto;
+  }
+  .public-list-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    li {
+      width: calc(~"50% - 3px");
+      margin: 0px 6px 6px 0;
+      background: #fff;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      .cover-wrap{
+        width: 100%;
+        height: calc(~'50vw - 8px');
+        .cover {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      
+      .information {
+        padding: 8px 10px;
+        .title {
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 12px;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          line-height: 20px!important;
+          min-height: 40px!important;
+        }
+        .user {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 12px;
+          .user-l {
+            display: flex;
+            align-items: center;
+            img {
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+              margin-right: 5px;
+            }
+          }
+          .user-r{
+            display: flex;
+            align-items: center;
+            color: #666;
+            font-size: 12px;
+            img{
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//公共按钮
+.public-btn-class {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.fixed{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+  }
+  &.mg-t-b{
+    margin-top: 80px;
+  }
+  &.fixed-bd{
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    left: 0;
+    bottom: 0px;
+    padding: 0 15px;
+    background: #fff;
+    box-shadow: 0px -5px 10px 0px 
+    rgba(158, 158, 158, 0.15);
+    z-index: 100;
+    .methods-btn,.common-btn{
+      height: 38px;
+    }
+  }
+  .methods-btn{
+    background: @commonColorA;
+    height: 44px;
+    width: 100%;
+    transition: all .2s;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    &.active {
+      background: @commonColor;
+    }
+  }
+  .common-btn {
+    background: @colorA;
+    height: 44px;
+    width: 100%;
+    transition: all .2s;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    &.active {
+      background: @color;
+    }
+    &.transition{
+      background-image: linear-gradient(90deg, 
+		#ff2f2f 0%, 
+		#ff4165 100%)
+    }
+  }
+  .methods-btn,.common-btn{
+    img{
+      height: 12px;
+      margin-right: 5px;
+    }
+    &.mg-t {
+      margin-top: 40px;
+    }
+    &.mg-d {
+      margin-bottom: 40px;
+    }
+
+    &.mg-d-s {
+      margin-bottom: 20px;
+    }
+
+    &.mg-t-s {
+      margin-top: 20px;
+    }
+
+    &.pd {
+      width: calc(~'100% - 20px');
+    }
+  }
+}
+
+.text-over {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 22px!important;
+  min-height: 44px!important;
+  &.f-s{
+    font-size: 12px!important;
+    line-height: 20px!important;
+    min-height: 40px!important;
+  }
+  &.f-l{
+    font-size: 16px!important;
+    line-height: 24px!important;
+    min-height: 48px!important;
+  }
+}
+
+
+.public-swiper {
+  height: 100vw;
+  img,
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  swiper {
+    height: 100%;
+  }
+}
+
+.public_video_icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+}
